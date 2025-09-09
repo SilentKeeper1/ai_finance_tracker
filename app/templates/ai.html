@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Помічник - AI-Finance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-100 text-gray-900;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <h1 class="text-2xl font-bold text-indigo-600">AI-Finance</h1>
+            <nav class="hidden md:flex space-x-2">
+                <a href="/dashboard" class="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-200 transition-colors">Дашборд</a>
+                <a href="/transactions" class="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-200 transition-colors">Транзакції</a>
+                <a href="/analytics" class="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-200 transition-colors">Аналітика</a>
+                <a href="/ai" class="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-200 transition-colors">AI Помічник</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-2">
+            <a href="/login" class="px-4 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-md shadow hover:bg-indigo-700 transition-colors">Увійти</a>
+            <a href="/register" class="px-4 py-2 text-sm font-semibold text-indigo-600 bg-indigo-100 rounded-md shadow hover:bg-indigo-200 transition-colors">Реєстрація</a>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4 md:p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">AI Помічник</h2>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+            <h3 class="text-xl font-semibold mb-4">Отримайте розумні поради</h3>
+            <div class="space-y-4">
+                <div class="flex space-x-2">
+                    <button class="flex-1 py-2 px-4 rounded-md text-sm font-medium bg-gray-200 hover:bg-gray-300 transition-colors">
+                        Як я можу зекономити?
+                    </button>
+                    <button class="flex-1 py-2 px-4 rounded-md text-sm font-medium bg-gray-200 hover:bg-gray-300 transition-colors">
+                        Аналіз моїх витрат
+                    </button>
+                    <button class="flex-1 py-2 px-4 rounded-md text-sm font-medium bg-gray-200 hover:bg-gray-300 transition-colors">
+                        Прогноз на наступний місяць
+                    </button>
+                </div>
+                <textarea class="w-full h-32 p-3 rounded-md border border-gray-300 focus:border-indigo-500 focus:ring-indigo-500" placeholder="Введіть ваше запитання..."></textarea>
+                <div class="text-right">
+                    <button class="py-2 px-6 rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Отримати пораду
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-semibold mb-4">Відповідь від AI</h3>
+            <div class="p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-gray-700">
+                <p>Базуючись на ваших даних, ви витрачаєте найбільше коштів на категорію "Розваги". Щоб зекономити, спробуйте обмежити цей бюджет або пошукати безкоштовні альтернативи для відпочинку. Наприклад, замість походів у кіно, можна влаштувати вечір перегляду фільмів вдома.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+        <p class="text-sm">&copy; 2025 AI-Finance Tracker. Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
