@@ -167,11 +167,3 @@ pytest -q
 3. Пул реквест — описуй фічу коротко
 
 ---
-
-## Ліцензія
-
-MIT © ТвояКоманда
-
----
-
-Якщо хочеш — можу згенерувати `.env.example`, `requirements.txt` або готовий `docker-compose.yml`. Хочеш зараз `.env.example` і `requirements.txt`?
